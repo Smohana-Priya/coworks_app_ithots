@@ -16,4 +16,7 @@ class AppConst {
   static const String directory = 'Business Directory';
   static const String events = 'Events';
   static const String services = 'Services';
+  static const String branches = 'Branches';
+  static const String workspace = 'WORKSPACE';
+  static const String next = 'Next';
 }

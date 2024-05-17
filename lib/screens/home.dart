@@ -3,6 +3,7 @@ import 'package:ithots_freelancing/utils/app_images.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_const.dart';
+import 'bottom_sheets/branches.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -30,6 +31,7 @@ class _HomeState extends State<Home> {
       'text': AppConst.services,
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -72,35 +74,44 @@ class _HomeState extends State<Home> {
                   for (int i = 0; i < cardsData.length; i++)
                     SizedBox(
                       width: (MediaQuery.of(context).size.width / 2) - 25,
-                      child: Card(
-                        elevation: 1,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        color: Colors.white,
-                        child: Padding(
-                          padding: EdgeInsets.all(12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset(cardsData[i]['image']!),
-                              // SvgPicture.asset('directory.svg'),
+                      child: InkWell(
+                        onTap: () {
+                          showModalBottomSheet(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Branches();
+                              });
+                        },
+                        child: Card(
+                          elevation: 1,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          color: Colors.white,
+                          child: Padding(
+                            padding: EdgeInsets.all(12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(cardsData[i]['image']!),
+                                // SvgPicture.asset('directory.svg'),
 
-                              Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.navigate_next),
-                              ),
-                              SizedBox(height: 5),
-                              Text(
-                                cardsData[i]['text']!,
-                                style: TextStyle(
-                                  fontFamily: "Inter",
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.black,
+                                Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Icon(Icons.navigate_next),
                                 ),
-                              ),
-                            ],
+                                SizedBox(height: 5),
+                                Text(
+                                  cardsData[i]['text']!,
+                                  style: TextStyle(
+                                    fontFamily: "Inter",
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
