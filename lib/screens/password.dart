@@ -1,28 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:ithots_freelancing/screens/password.dart';
-import 'package:ithots_freelancing/utils/app_colors.dart';
-import 'package:ithots_freelancing/utils/app_const.dart';
 
-import 'package:ithots_freelancing/utils/app_images.dart';
-import 'package:ithots_freelancing/widgets/common_button.dart';
-
+import '../utils/app_colors.dart';
+import '../utils/app_const.dart';
+import '../utils/app_images.dart';
+import '../widgets/common_button.dart';
 import '../widgets/common_textfield.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Password extends StatefulWidget {
+  const Password({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Password> createState() => _PasswordState();
 }
 
-class _LoginState extends State<Login> {
-  final TextEditingController _emailCntrl = TextEditingController();
+class _PasswordState extends State<Password> {
   final TextEditingController _pswrdCntrl = TextEditingController();
-  bool _isChecked = false;
+
   @override
   void dispose() {
-    _emailCntrl.dispose();
     _pswrdCntrl.dispose();
     super.dispose();
   }
@@ -40,14 +35,13 @@ class _LoginState extends State<Login> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Align(
-                    // alignment: Alignment.center,
                     child: Image.asset(AppImages.logo),
                   ),
                   SizedBox(
                     height: 25,
                   ),
                   Text(
-                    AppConst.hello,
+                    AppConst.confirmPswrd,
                     style: TextStyle(
                         fontFamily: 'Inter',
                         fontSize: 28,
@@ -58,7 +52,7 @@ class _LoginState extends State<Login> {
                     height: 13,
                   ),
                   Text(
-                    AppConst.enterCred,
+                    AppConst.profileDetails,
                     style: TextStyle(
                         fontFamily: 'Inter',
                         fontSize: 16,
@@ -66,54 +60,22 @@ class _LoginState extends State<Login> {
                         color: AppColors.black),
                   ),
                   SizedBox(
-                    height: 20,
-                  ),
-                  CommonTextField(
-                    textCtrl: _emailCntrl,
-                    hintText: AppConst.enterEmail,
-                    label: AppConst.email,
-                  ),
-                  SizedBox(
-                    height: 25,
+                    height: 30,
                   ),
                   CommonTextField(
                     textCtrl: _pswrdCntrl,
                     hintText: AppConst.enterPswrd,
                     label: AppConst.password,
                   ),
-                  Row(
-                    children: [
-                      Checkbox(
-                        activeColor: Colors.green,
-                        value: _isChecked,
-                        onChanged: (newValue) {
-                          setState(() {
-                            _isChecked = newValue!;
-                          });
-                        },
-                      ),
-                      Text(
-                        AppConst.remember,
-                        style: TextStyle(
-                            color: AppColors.grey,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                            fontFamily: 'Inter'),
-                      ),
-                    ],
-                  ),
                   SizedBox(
-                    height: 25,
+                    height: 30,
                   ),
                   CommonButton(
                     text: AppConst.continueTxt,
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Password()));
-                    },
+                    onPressed: () {},
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 15,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
