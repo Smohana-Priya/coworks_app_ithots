@@ -5,6 +5,7 @@ import '../utils/app_const.dart';
 import '../utils/app_images.dart';
 import '../widgets/common_button.dart';
 import '../widgets/common_textfield.dart';
+import 'home.dart';
 
 class Password extends StatefulWidget {
   const Password({super.key});
@@ -72,7 +73,10 @@ class _PasswordState extends State<Password> {
                   ),
                   CommonButton(
                     text: AppConst.continueTxt,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home()));
+                    },
                   ),
                   SizedBox(
                     height: 15,

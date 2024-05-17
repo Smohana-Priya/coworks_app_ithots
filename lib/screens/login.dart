@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:ithots_freelancing/screens/password.dart';
 import 'package:ithots_freelancing/utils/app_colors.dart';
 import 'package:ithots_freelancing/utils/app_const.dart';

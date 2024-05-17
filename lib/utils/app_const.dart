@@ -12,4 +12,8 @@ class AppConst {
   static const String signup = " Sign Up";
   static const String confirmPswrd = "Confirm Password";
   static const String profileDetails = "Please add your Profile details here";
+  static const String coWorks = 'Coworkz';
+  static const String directory = 'Business Directory';
+  static const String events = 'Events';
+  static const String services = 'Services';
 }
