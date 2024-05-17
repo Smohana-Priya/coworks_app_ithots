@@ -19,4 +19,5 @@ class AppConst {
   static const String branches = 'Branches';
   static const String workspace = 'WORKSPACE';
   static const String next = 'Next';
+  static const String bookService = 'BOOK A SERVICE';
 }

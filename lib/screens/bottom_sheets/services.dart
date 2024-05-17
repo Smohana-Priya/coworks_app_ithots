@@ -6,21 +6,20 @@ import 'package:ithots_freelancing/utils/app_const.dart';
 import 'package:ithots_freelancing/utils/app_images.dart';
 import 'package:ithots_freelancing/widgets/common_button.dart';
 
-class Branches extends StatefulWidget {
-  const Branches({super.key});
+class Services extends StatefulWidget {
+  const Services({super.key});
 
   @override
-  State<Branches> createState() => _CoWorksBranchesState();
+  State<Services> createState() => _CoWorksBranchesState();
 }
 
-class _CoWorksBranchesState extends State<Branches> {
-  final List<String> _branches = [
-    'Annanagar',
-    'Koranur',
-    'Bangalore',
-    'Coimbatore',
-    'Trichi',
-    'Mumbai'
+class _CoWorksBranchesState extends State<Services> {
+  final List<String> _services = [
+    'Digital Marketing',
+    'SEO',
+    'HR Service',
+    'Legal Service',
+    'Virtual Assistant',
   ];
   @override
   Widget build(BuildContext context) {
@@ -79,19 +78,41 @@ class _CoWorksBranchesState extends State<Branches> {
             child: Image.asset(AppImages.logo),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            AppConst.bookService,
+            style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: AppColors.grey),
+          ),
+        ),
         Expanded(
           child: ListView.builder(
-              itemCount: _branches.length,
+              itemCount: _services.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Container(
-                      height: 50,
+                      height: 70,
                       decoration: BoxDecoration(
-                          color: AppColors.grey2,
                           borderRadius: BorderRadius.circular(15)),
                       width: double.infinity,
-                      child: Center(child: Text(_branches[index])),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: AppColors.grey2,
+                            // radius: 40,
+                            child: Image.asset(AppImages.marketing),
+                          ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Text(_services[index]),
+                        ],
+                      ),
                     ));
               }),
         ),

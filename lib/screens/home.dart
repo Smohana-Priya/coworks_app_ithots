@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ithots_freelancing/screens/bottom_sheets/services.dart';
 import 'package:ithots_freelancing/utils/app_images.dart';
 
 import '../utils/app_colors.dart';
@@ -79,7 +80,7 @@ class _HomeState extends State<Home> {
                           showModalBottomSheet(
                               context: context,
                               builder: (BuildContext context) {
-                                return Branches();
+                                return Services();
                               });
                         },
                         child: Card(
