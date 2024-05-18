@@ -20,4 +20,7 @@ class AppConst {
   static const String workspace = 'WORKSPACE';
   static const String next = 'Next';
   static const String bookService = 'BOOK A SERVICE';
+  static const String dir = 'Directory';
+  static const String enterpriseName = 'Enterprise name';
+  static const String search = 'Search';
 }

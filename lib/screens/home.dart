@@ -1,9 +1,9 @@
+import 'package:coworks_app_ithots/screens/bottom_sheets/branches.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_const.dart';
 import '../utils/app_images.dart';
-import 'bottom_sheets/services.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
                           showModalBottomSheet(
                               context: context,
                               builder: (BuildContext context) {
-                                return Services();
+                                return Branches();
                               });
                         },
                         child: Card(
