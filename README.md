@@ -1,4 +1,4 @@
-# ithots_freelancing
+# coworks_app_ithots
 
 A new Flutter project.
 

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ithots_freelancing/screens/bottom_sheets/services.dart';
-import 'package:ithots_freelancing/utils/app_images.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_const.dart';
-import 'bottom_sheets/branches.dart';
+import '../utils/app_images.dart';
+import 'bottom_sheets/services.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

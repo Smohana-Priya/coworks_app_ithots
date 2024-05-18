@@ -1,4 +1,4 @@
-package com.example.ithots_freelancing
+package com.example.coworks_app_ithots
 
 import io.flutter.embedding.android.FlutterActivity
 

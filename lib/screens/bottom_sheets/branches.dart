@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:ithots_freelancing/utils/app_colors.dart';
-
-import 'package:ithots_freelancing/utils/app_const.dart';
-import 'package:ithots_freelancing/utils/app_images.dart';
-import 'package:ithots_freelancing/widgets/common_button.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/app_const.dart';
+import '../../utils/app_images.dart';
+import '../../widgets/common_button.dart';
 
 class Branches extends StatefulWidget {
   const Branches({super.key});
