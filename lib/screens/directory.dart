@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../utils/app_images.dart';
 import '../widgets/category_dropdown.dart';
+import 'directory_details.dart';
 
 class Directory extends StatefulWidget {
   const Directory({super.key});
@@ -107,7 +108,15 @@ class _DirectoryState extends State<Directory> {
                 child: ListView.builder(
                     itemCount: _img.length,
                     itemBuilder: (context, index) {
-                      return DirectoryCard(img: _img[index]);
+                      return DirectoryCard(
+                        img: _img[index],
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DirectoryDetails()));
+                        },
+                      );
                     }),
               )
             ],

@@ -1,4 +1,4 @@
-import 'package:coworks_app_ithots/screens/directory.dart';
+import 'package:coworks_app_ithots/screens/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Directory(),
+      home: Login(),
     );
   }
 }

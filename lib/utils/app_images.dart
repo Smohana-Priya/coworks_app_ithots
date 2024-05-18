@@ -10,4 +10,6 @@ class AppImages {
   static const String enterprise1 = 'assets/images/enterprise1.png';
   static const String enterprise2 = 'assets/images/enterprise2.png';
   static const String enterprise3 = 'assets/images/enterprise3.png';
+  static const String enterprise = 'assets/images/enterprise.png';
+  static const String share = 'assets/images/share.png';
 }

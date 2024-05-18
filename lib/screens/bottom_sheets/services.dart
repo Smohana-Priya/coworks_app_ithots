@@ -103,7 +103,6 @@ class _CoWorksBranchesState extends State<Services> {
                         children: [
                           CircleAvatar(
                             backgroundColor: AppColors.grey2,
-                            // radius: 40,
                             child: Image.asset(AppImages.marketing),
                           ),
                           SizedBox(
