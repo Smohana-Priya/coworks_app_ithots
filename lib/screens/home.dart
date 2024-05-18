@@ -1,4 +1,6 @@
 import 'package:coworks_app_ithots/screens/bottom_sheets/branches.dart';
+import 'package:coworks_app_ithots/screens/bottom_sheets/services.dart';
+import 'package:coworks_app_ithots/screens/directory.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -31,6 +33,31 @@ class _HomeState extends State<Home> {
       'text': AppConst.services,
     },
   ];
+  void navigateToScreen(int i) {
+    switch (i) {
+      case 0:
+        showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return Branches();
+            });
+        break;
+      case 1:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Directory()));
+        break;
+      case 2:
+        null;
+        break;
+      case 3:
+        showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return Services();
+            });
+        break;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -76,11 +103,7 @@ class _HomeState extends State<Home> {
                       width: (MediaQuery.of(context).size.width / 2) - 25,
                       child: InkWell(
                         onTap: () {
-                          showModalBottomSheet(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return Branches();
-                              });
+                          navigateToScreen(i);
                         },
                         child: Card(
                           elevation: 1,
@@ -94,8 +117,6 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Image.asset(cardsData[i]['image']!),
-                                // SvgPicture.asset('directory.svg'),
-
                                 Align(
                                   alignment: Alignment.centerRight,
                                   child: Icon(Icons.navigate_next),

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_const.dart';
 import '../../utils/app_images.dart';
-import '../../widgets/common_button.dart';
 
 class Branches extends StatefulWidget {
   const Branches({super.key});
@@ -83,21 +82,26 @@ class _CoWorksBranchesState extends State<Branches> {
               itemCount: _branches.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
                           color: AppColors.grey2,
                           borderRadius: BorderRadius.circular(15)),
                       width: double.infinity,
-                      child: Center(child: Text(_branches[index])),
+                      child: Center(
+                          child: Text(
+                        _branches[index],
+                        style: TextStyle(
+                            fontFamily: 'Inter',
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.black),
+                      )),
                     ));
               }),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: CommonButton(text: AppConst.next, onPressed: () {}),
-        )
       ],
     );
   }

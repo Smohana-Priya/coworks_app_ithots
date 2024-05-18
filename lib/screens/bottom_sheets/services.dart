@@ -13,12 +13,27 @@ class Services extends StatefulWidget {
 }
 
 class _CoWorksBranchesState extends State<Services> {
-  final List<String> _services = [
-    'Digital Marketing',
-    'SEO',
-    'HR Service',
-    'Legal Service',
-    'Virtual Assistant',
+  final List<Map<String, dynamic>> _services = [
+    {
+      'img': AppImages.marketing,
+      'title': 'Digital Marketing',
+    },
+    {
+      'img': AppImages.seo,
+      'title': 'SEO',
+    },
+    {
+      'img': AppImages.meeting,
+      'title': 'HR Service',
+    },
+    {
+      'img': AppImages.legal,
+      'title': 'Legal Service',
+    },
+    {
+      'img': AppImages.virtual,
+      'title': 'Virtual Assistant',
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -94,30 +109,31 @@ class _CoWorksBranchesState extends State<Services> {
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      height: 70,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15)),
-                      width: double.infinity,
-                      child: Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: AppColors.grey2,
-                            child: Image.asset(AppImages.marketing),
-                          ),
-                          SizedBox(
-                            width: 20,
-                          ),
-                          Text(_services[index]),
-                        ],
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        height: 70,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15)),
+                        width: double.infinity,
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: AppColors.grey2,
+                              child: Image.asset(_services[index]['img']),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(_services[index]['title']),
+                          ],
+                        ),
                       ),
                     ));
               }),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: CommonButton(text: AppConst.next, onPressed: () {}),
-        )
       ],
     );
   }

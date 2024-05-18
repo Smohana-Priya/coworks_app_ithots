@@ -12,4 +12,8 @@ class AppImages {
   static const String enterprise3 = 'assets/images/enterprise3.png';
   static const String enterprise = 'assets/images/enterprise.png';
   static const String share = 'assets/images/share.png';
+  static const String seo = 'assets/images/seo.png';
+  static const String meeting = 'assets/images/meeting.png';
+  static const String virtual = 'assets/images/virtual.png';
+  static const String legal = 'assets/images/legal.png';
 }
