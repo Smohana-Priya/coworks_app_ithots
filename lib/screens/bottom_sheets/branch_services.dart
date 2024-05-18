@@ -3,23 +3,27 @@ import 'package:flutter/material.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_const.dart';
 import '../../utils/app_images.dart';
-import 'branch_services.dart';
 
-class Branches extends StatefulWidget {
-  const Branches({super.key});
-
-  @override
-  State<Branches> createState() => _CoWorksBranchesState();
-}
-
-class _CoWorksBranchesState extends State<Branches> {
-  final List<String> _branches = [
-    'Annanagar',
-    'Koranur',
-    'Bangalore',
-    'Coimbatore',
-    'Trichi',
-    'Mumbai'
+class BranchServices extends StatelessWidget {
+  final String branchName;
+  BranchServices({super.key, required this.branchName});
+  final List<Map<String, dynamic>> _services = [
+    {
+      'img': AppImages.workstation,
+      'title': 'Book a Workstation',
+    },
+    {
+      'img': AppImages.conference,
+      'title': 'Book a Conference Room',
+    },
+    {
+      'img': AppImages.meeting,
+      'title': 'Book Meeting Room',
+    },
+    {
+      'img': AppImages.seat,
+      'title': 'Book a Hot Seat',
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -78,39 +82,44 @@ class _CoWorksBranchesState extends State<Branches> {
             child: Image.asset(AppImages.logo),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            branchName,
+            style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: AppColors.grey),
+          ),
+        ),
         Expanded(
           child: ListView.builder(
-              itemCount: _branches.length,
+              itemCount: _services.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: InkWell(
                       onTap: () {
                         Navigator.pop(context);
-                        showModalBottomSheet(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return BranchServices(
-                                branchName: _branches[index],
-                              );
-                            });
                       },
                       child: Container(
-                        height: 50,
+                        height: 70,
                         decoration: BoxDecoration(
-                            color: AppColors.grey2,
                             borderRadius: BorderRadius.circular(15)),
                         width: double.infinity,
-                        child: Center(
-                            child: Text(
-                          _branches[index],
-                          style: TextStyle(
-                              fontFamily: 'Inter',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black),
-                        )),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: AppColors.grey2,
+                              child: Image.asset(_services[index]['img']),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(_services[index]['title']),
+                          ],
+                        ),
                       ),
                     ));
               }),

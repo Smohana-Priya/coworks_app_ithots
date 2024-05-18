@@ -16,4 +16,7 @@ class AppImages {
   static const String meeting = 'assets/images/meeting.png';
   static const String virtual = 'assets/images/virtual.png';
   static const String legal = 'assets/images/legal.png';
+  static const String workstation = 'assets/images/workstation.png';
+  static const String conference = 'assets/images/conference.png';
+  static const String seat = 'assets/images/seat.png';
 }

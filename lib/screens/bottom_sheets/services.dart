@@ -3,16 +3,10 @@ import 'package:flutter/material.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_const.dart';
 import '../../utils/app_images.dart';
-import '../../widgets/common_button.dart';
 
-class Services extends StatefulWidget {
-  const Services({super.key});
+class Services extends StatelessWidget {
+  Services({super.key});
 
-  @override
-  State<Services> createState() => _CoWorksBranchesState();
-}
-
-class _CoWorksBranchesState extends State<Services> {
   final List<Map<String, dynamic>> _services = [
     {
       'img': AppImages.marketing,
@@ -35,6 +29,7 @@ class _CoWorksBranchesState extends State<Services> {
       'title': 'Virtual Assistant',
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,7 +41,7 @@ class _CoWorksBranchesState extends State<Services> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                AppConst.branches,
+                AppConst.services,
                 style: TextStyle(
                     fontFamily: 'Inter',
                     fontSize: 18,
