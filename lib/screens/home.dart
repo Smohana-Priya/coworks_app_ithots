@@ -1,6 +1,4 @@
-import 'package:coworks_app_ithots/screens/bottom_sheets/branches.dart';
-import 'package:coworks_app_ithots/screens/bottom_sheets/services.dart';
-import 'package:coworks_app_ithots/screens/directory.dart';
+import 'package:coworks_app_ithots/screens/directory/directory.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -36,11 +34,11 @@ class _HomeState extends State<Home> {
   void navigateToScreen(int i) {
     switch (i) {
       case 0:
-        showModalBottomSheet(
-            context: context,
-            builder: (BuildContext context) {
-              return Branches();
-            });
+        // showModalBottomSheet(
+        //     context: context,
+        //     builder: (BuildContext context) {
+        //       return Branches();
+        //     });
         break;
       case 1:
         Navigator.push(
@@ -50,11 +48,11 @@ class _HomeState extends State<Home> {
         null;
         break;
       case 3:
-        showModalBottomSheet(
-            context: context,
-            builder: (BuildContext context) {
-              return Services();
-            });
+        // showModalBottomSheet(
+        //     context: context,
+        //     builder: (BuildContext context) {
+        //       return Services();
+        //     });
         break;
     }
   }

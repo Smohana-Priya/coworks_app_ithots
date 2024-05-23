@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../utils/app_colors.dart';
-import '../utils/app_const.dart';
-import '../utils/app_images.dart';
-import '../widgets/common_button.dart';
-import '../widgets/common_textfield.dart';
-import 'home.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/app_const.dart';
+import '../../utils/app_images.dart';
+import '../../widgets/common_button.dart';
+import '../../widgets/common_textfield.dart';
+import '../home.dart';
 
 class Password extends StatefulWidget {
   const Password({super.key});

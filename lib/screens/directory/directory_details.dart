@@ -2,7 +2,7 @@ import 'package:coworks_app_ithots/utils/app_colors.dart';
 import 'package:coworks_app_ithots/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/app_images.dart';
+import '../../utils/app_images.dart';
 
 class DirectoryDetails extends StatelessWidget {
   const DirectoryDetails({super.key});

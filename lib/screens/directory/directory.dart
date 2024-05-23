@@ -3,8 +3,8 @@ import 'package:coworks_app_ithots/utils/app_const.dart';
 import 'package:coworks_app_ithots/widgets/directory_card.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/app_images.dart';
-import '../widgets/category_dropdown.dart';
+import '../../utils/app_images.dart';
+import '../../widgets/category_dropdown.dart';
 import 'directory_details.dart';
 
 class Directory extends StatefulWidget {
