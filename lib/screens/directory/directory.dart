@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../utils/app_images.dart';
 import '../../widgets/category_dropdown.dart';
+import '../drawer/drawer.dart';
 import 'directory_details.dart';
 
 class Directory extends StatefulWidget {
@@ -33,7 +34,9 @@ class _DirectoryState extends State<Directory> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: CoworksDrawer(),
+        ),
         appBar: AppBar(
           toolbarHeight: 100,
           centerTitle: true,

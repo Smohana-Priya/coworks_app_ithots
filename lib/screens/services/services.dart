@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_const.dart';
 import '../../utils/app_images.dart';
+import '../drawer/drawer.dart';
 
 class Services extends StatefulWidget {
   const Services({super.key});
@@ -60,7 +61,9 @@ class _ServicesState extends State<Services> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: CoworksDrawer(),
+        ),
         appBar: AppBar(
           toolbarHeight: 65,
           centerTitle: true,

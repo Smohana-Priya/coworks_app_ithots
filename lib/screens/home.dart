@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_const.dart';
 import '../utils/app_images.dart';
+import 'drawer/drawer.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -64,7 +65,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: CoworksDrawer(),
+        ),
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,

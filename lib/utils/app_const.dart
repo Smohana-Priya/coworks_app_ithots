@@ -1,5 +1,6 @@
 class AppConst {
   static const String hello = 'Hey, Hello 👋';
+  static const String home = 'Home';
   static const String enterCred =
       'Enter your credentials to access your\naccount';
   static const String email = 'EMAIL OR PHONE';
@@ -32,6 +33,8 @@ class AppConst {
   static const String dirDetails = 'Directory details';
   static const String enterpriseName = 'Enterprise name';
   static const String search = 'Search';
+  static const String contact = 'Contact us';
+  static const String refer = 'Refer & Earn';
   static const String lorem =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."';
   static const String lorem2 =

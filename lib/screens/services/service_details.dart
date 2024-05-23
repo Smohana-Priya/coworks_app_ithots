@@ -4,6 +4,7 @@ import 'package:coworks_app_ithots/widgets/common_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/app_images.dart';
+import '../drawer/drawer.dart';
 
 class ServiceDetails extends StatelessWidget {
   final String title;
@@ -13,7 +14,9 @@ class ServiceDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: CoworksDrawer(),
+        ),
         appBar: AppBar(
           toolbarHeight: 65,
           centerTitle: true,
