@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../utils/app_images.dart';
 import '../drawer/drawer.dart';
+import '../profile/profile.dart';
 
 class ServiceDetails extends StatelessWidget {
   final String title;
@@ -27,7 +28,12 @@ class ServiceDetails extends StatelessWidget {
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20.0, top: 18),
-              child: Image.asset(AppImages.profile),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Image.asset(AppImages.profile)),
             )
           ],
         ),

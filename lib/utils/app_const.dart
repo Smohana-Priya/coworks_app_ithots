@@ -9,6 +9,7 @@ class AppConst {
   static const String enterPswrd = 'Enter your Password';
   static const String remember = 'Remember me';
   static const String continueTxt = 'Continue';
+  static const String editProfile = 'Edit Profile';
   static const String account = "Don't have an account? ";
   static const String signup = " Sign Up";
   static const String confirmPswrd = "Confirm Password";
@@ -25,6 +26,8 @@ class AppConst {
   static const String branches = 'Branches';
   static const String workspace = 'WORKSPACE';
   static const String next = 'Next';
+  static const String name = 'Name';
+  static const String mobile = 'Mobile : ';
   static const String seo = 'SEO';
   static const String hrAss = 'HR Assistant';
   static const String graphic = 'Graphic Design';
@@ -34,6 +37,7 @@ class AppConst {
   static const String enterpriseName = 'Enterprise name';
   static const String search = 'Search';
   static const String contact = 'Contact us';
+  static const String contactDetails = 'Contact Details';
   static const String refer = 'Refer & Earn';
   static const String lorem =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."';

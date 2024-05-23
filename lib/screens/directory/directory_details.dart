@@ -3,6 +3,7 @@ import 'package:coworks_app_ithots/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/app_images.dart';
+import '../profile/profile.dart';
 
 class DirectoryDetails extends StatelessWidget {
   const DirectoryDetails({super.key});
@@ -24,7 +25,12 @@ class DirectoryDetails extends StatelessWidget {
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20.0),
-              child: Image.asset(AppImages.profile),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Image.asset(AppImages.profile)),
             )
           ],
         ),

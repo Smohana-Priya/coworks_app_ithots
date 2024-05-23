@@ -6,6 +6,7 @@ import '../utils/app_colors.dart';
 import '../utils/app_const.dart';
 import '../utils/app_images.dart';
 import 'drawer/drawer.dart';
+import 'profile/profile.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -78,7 +79,12 @@ class _HomeState extends State<Home> {
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20.0),
-              child: Image.asset(AppImages.profile),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Image.asset(AppImages.profile)),
             )
           ],
         ),

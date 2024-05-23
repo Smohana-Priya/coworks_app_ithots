@@ -40,13 +40,13 @@ class CoworksDrawer extends StatelessWidget {
           ),
           for (int i = 0; i < navItems.length; i++)
             Padding(
-              padding: const EdgeInsets.only(left: 30, bottom: 20),
+              padding: const EdgeInsets.only(left: 30, bottom: 30),
               child: Text(
                 navItems[i],
                 style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'Inter',
-                    fontSize: 17,
+                    fontSize: 16,
                     fontWeight: FontWeight.w600),
               ),
             ),

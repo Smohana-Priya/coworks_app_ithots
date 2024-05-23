@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../utils/app_images.dart';
 import '../../widgets/category_dropdown.dart';
 import '../drawer/drawer.dart';
+import '../profile/profile.dart';
 import 'directory_details.dart';
 
 class Directory extends StatefulWidget {
@@ -47,7 +48,12 @@ class _DirectoryState extends State<Directory> {
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20.0),
-              child: Image.asset(AppImages.profile),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Image.asset(AppImages.profile)),
             )
           ],
         ),
