@@ -1,4 +1,5 @@
 import 'package:coworks_app_ithots/screens/directory/directory.dart';
+import 'package:coworks_app_ithots/screens/services/services.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -48,6 +49,8 @@ class _HomeState extends State<Home> {
         null;
         break;
       case 3:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Services()));
         // showModalBottomSheet(
         //     context: context,
         //     builder: (BuildContext context) {
