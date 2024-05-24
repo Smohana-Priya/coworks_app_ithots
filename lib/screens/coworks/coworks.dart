@@ -1,3 +1,4 @@
+import 'package:coworks_app_ithots/screens/coworks/coworks_details.dart';
 import 'package:coworks_app_ithots/widgets/location_card.dart';
 import 'package:flutter/material.dart';
 
@@ -57,10 +58,10 @@ class Coworks extends StatelessWidget {
                       return LocationCard(
                         img: AppImages.enterprise4,
                         onPressed: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => DirectoryDetails()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CoworksDetails()));
                         },
                       );
                     }),

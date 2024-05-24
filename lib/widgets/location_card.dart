@@ -22,13 +22,18 @@ class LocationCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               children: [
-                Image.asset(
-                  img,
-                  width: MediaQuery.of(context).size.width / 3.5,
-                  fit: BoxFit.cover,
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 3.1,
+                  child: AspectRatio(
+                    aspectRatio: 1.2,
+                    child: Image.asset(
+                      img,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 13,
                 ),
                 Expanded(
                   child: Padding(

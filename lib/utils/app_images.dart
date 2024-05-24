@@ -20,4 +20,6 @@ class AppImages {
   static const String workstation = 'assets/images/workstation.png';
   static const String conference = 'assets/images/conference.png';
   static const String seat = 'assets/images/seat.png';
+  static const String cmp = 'assets/images/cmp.png';
+  static const String map = 'assets/images/map.png';
 }

@@ -1,3 +1,4 @@
+import 'package:coworks_app_ithots/screens/coworks/coworks.dart';
 import 'package:coworks_app_ithots/screens/directory/directory.dart';
 import 'package:coworks_app_ithots/screens/services/services.dart';
 import 'package:flutter/material.dart';
@@ -37,11 +38,8 @@ class _HomeState extends State<Home> {
   void navigateToScreen(int i) {
     switch (i) {
       case 0:
-        // showModalBottomSheet(
-        //     context: context,
-        //     builder: (BuildContext context) {
-        //       return Branches();
-        //     });
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Coworks()));
         break;
       case 1:
         Navigator.push(
@@ -53,11 +51,6 @@ class _HomeState extends State<Home> {
       case 3:
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => Services()));
-        // showModalBottomSheet(
-        //     context: context,
-        //     builder: (BuildContext context) {
-        //       return Services();
-        //     });
         break;
     }
   }

@@ -27,7 +27,10 @@ class AppConst {
   static const String branches = 'Branches';
   static const String workspace = 'WORKSPACE';
   static const String next = 'Next';
+  static const String moreInfo = 'More Info';
   static const String name = 'Name';
+  static const String bookNow = 'Book Now';
+  static const String referAfrnd = 'Refer a Friend';
   static const String mobile = 'Mobile : ';
   static const String seo = 'SEO';
   static const String hrAss = 'HR Assistant';
@@ -35,13 +38,14 @@ class AppConst {
   static const String bookService = 'BOOK A SERVICE';
   static const String dir = 'Directory';
   static const String dirDetails = 'Directory details';
+  static const String locationDetails = 'Location details';
   static const String enterpriseName = 'Enterprise name';
   static const String search = 'Search';
   static const String contact = 'Contact us';
   static const String contactDetails = 'Contact Details';
   static const String refer = 'Refer & Earn';
   static const String lorem =
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."';
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
   static const String lorem2 =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ';
   static const String lorem3 = 'Lorem ipsum dolor sit amet, consectetur';

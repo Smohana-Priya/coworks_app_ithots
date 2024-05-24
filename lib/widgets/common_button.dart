@@ -7,11 +7,15 @@ import '../utils/app_colors.dart';
 class CommonButton extends StatelessWidget {
   final String text;
   void Function()? onPressed;
-  CommonButton({
-    super.key,
-    required this.text,
-    required this.onPressed,
-  });
+  final Color? bgColor;
+  final Color? txtColor;
+
+  CommonButton(
+      {super.key,
+      required this.text,
+      required this.onPressed,
+      this.bgColor,
+      this.txtColor});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +24,10 @@ class CommonButton extends StatelessWidget {
         width: double.infinity,
         child: ElevatedButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                AppColors.primary,
+              backgroundColor: WidgetStateProperty.all<Color>(
+                bgColor ?? AppColors.primary,
               ),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -33,7 +37,7 @@ class CommonButton extends StatelessWidget {
             child: Text(
               text,
               style: TextStyle(
-                  color: Colors.white,
+                  color: txtColor ?? Colors.white,
                   fontFamily: 'Inter',
                   fontWeight: FontWeight.w600,
                   fontSize: 16),
