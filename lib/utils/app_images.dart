@@ -22,4 +22,7 @@ class AppImages {
   static const String seat = 'assets/images/seat.png';
   static const String cmp = 'assets/images/cmp.png';
   static const String map = 'assets/images/map.png';
+  static const String call = 'assets/images/call.png';
+  static const String mail = 'assets/images/mail.png';
+  static const String web = 'assets/images/web.png';
 }

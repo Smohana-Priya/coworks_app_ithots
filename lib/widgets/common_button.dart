@@ -9,18 +9,20 @@ class CommonButton extends StatelessWidget {
   void Function()? onPressed;
   final Color? bgColor;
   final Color? txtColor;
+  final double? height;
 
   CommonButton(
       {super.key,
       required this.text,
       required this.onPressed,
       this.bgColor,
-      this.txtColor});
+      this.txtColor,
+      this.height});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: 50,
+        height: height ?? 50,
         width: double.infinity,
         child: ElevatedButton(
             style: ButtonStyle(

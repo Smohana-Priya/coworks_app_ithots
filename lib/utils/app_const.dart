@@ -33,6 +33,9 @@ class AppConst {
   static const String referAfrnd = 'Refer a Friend';
   static const String mobile = 'Mobile : ';
   static const String seo = 'SEO';
+  static const String call = 'Call';
+  static const String mail = 'Mail';
+  static const String web = 'Web';
   static const String hrAss = 'HR Assistant';
   static const String graphic = 'Graphic Design';
   static const String bookService = 'BOOK A SERVICE';
