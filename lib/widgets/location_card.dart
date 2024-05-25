@@ -14,12 +14,13 @@ class LocationCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: InkWell(
         onTap: onPressed,
-        child: Container(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(width: 0.3, color: AppColors.grey)),
+        child: Card(
+          elevation: 3,
+          // decoration: BoxDecoration(
+          //     borderRadius: BorderRadius.circular(10),
+          //     border: Border.all(width: 0.3, color: AppColors.grey)),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             child: Row(
               children: [
                 SizedBox(

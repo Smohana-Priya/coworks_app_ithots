@@ -239,7 +239,7 @@ class _DirectoryDetailsState extends State<DirectoryDetails> {
                     ),
                   ],
                 ),
-                SizedBox(height: size.height * 0.01),
+                SizedBox(height: size.height * 0.02),
                 Text(
                   AppConst.lorem,
                   style: TextStyle(
@@ -249,9 +249,9 @@ class _DirectoryDetailsState extends State<DirectoryDetails> {
                     color: AppColors.black,
                   ),
                 ),
-                SizedBox(height: size.height * 0.01),
+                SizedBox(height: size.height * 0.02),
                 Card(
-                  elevation: 5,
+                  elevation: 3,
                   child: Padding(
                     padding: EdgeInsets.all(size.width * 0.04),
                     child: Row(
@@ -294,7 +294,7 @@ class _DirectoryDetailsState extends State<DirectoryDetails> {
                   AppConst.contactDetails,
                   style: TextStyle(
                     fontFamily: 'Inter',
-                    fontSize: 24,
+                    fontSize: 16,
                     fontWeight: FontWeight.w600,
                     color: AppColors.black,
                   ),

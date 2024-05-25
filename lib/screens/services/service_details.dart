@@ -38,7 +38,7 @@ class ServiceDetails extends StatelessWidget {
           ],
         ),
         body: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(25.0),
           child: SingleChildScrollView(
             child: Column(
               children: [

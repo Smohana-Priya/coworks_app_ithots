@@ -227,13 +227,13 @@ class _CoworksDetailsState extends State<CoworksDetails> {
                     }),
                   ),
                   SizedBox(
-                    height: 25,
+                    height: 30,
                   ),
                   Text(
                     AppConst.moreInfo,
                     style: TextStyle(
                         fontFamily: 'Inter',
-                        fontSize: 24,
+                        fontSize: 18,
                         fontWeight: FontWeight.w600,
                         color: AppColors.black),
                   ),
@@ -255,7 +255,7 @@ class _CoworksDetailsState extends State<CoworksDetails> {
                     AppConst.contactDetails,
                     style: TextStyle(
                         fontFamily: 'Inter',
-                        fontSize: 24,
+                        fontSize: 18,
                         fontWeight: FontWeight.w600,
                         color: AppColors.black),
                   ),
@@ -315,7 +315,7 @@ class _CoworksDetailsState extends State<CoworksDetails> {
                     ],
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 20,
                   ),
                   Image.asset(AppImages.map),
                   SizedBox(

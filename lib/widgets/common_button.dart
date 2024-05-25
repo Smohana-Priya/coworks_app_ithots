@@ -36,13 +36,16 @@ class CommonButton extends StatelessWidget {
               ),
             ),
             onPressed: onPressed,
-            child: Text(
-              text,
-              style: TextStyle(
-                  color: txtColor ?? Colors.white,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w600,
-                  fontSize: 16),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                text,
+                style: TextStyle(
+                    color: txtColor ?? Colors.white,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16),
+              ),
             )));
   }
 }
